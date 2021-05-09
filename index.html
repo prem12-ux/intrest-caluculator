@@ -1,19 +1,18 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
-
-    
-        
-    
-    
-    
-    <div>
-    <div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator:Simple Interest</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="maindiv">
+    <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number">  <br>
-        Rate <input type="range" value="default_val"> 
-             <span>10.25%</span> <br>
-        No. of Years <select>
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="range"  id="rate" min="1" max="20" value="default_val" onchange="updateRate()">
+             <span id="rate_val">10.25%</span> <br/>
+        No. of Years <select id="years">
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
@@ -24,20 +23,20 @@
                      <option value="8">8</option>
                      <option value="9">9</option>
                      <option value="10">10</option>
-                     </select><br>
-        Interest : <span><br></span><br>
+                     </select><br/>
+        Interest : <span id="result"><br></span><br>
 
-        <button>Compute Interest</button>
-        <span>
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result" class="design">
 
         </span>
-        
-         Â© Copyright reserved 2021<br>
-         This is created specially for non profit NGO organisation by Pranav Teja<br>
-        
-    
+        <footer>
+         © Copyright reserved 2021<br>
+         This is created specially for non profit NGO organisation by Pranav Teja <br>
+        </footer>
+   
+    </body>
     </div>
-    </div>
+</html>
 
 
-</body></html>
